@@ -1,7 +1,6 @@
 ---
-title: My book title
-author: Daniel Herzog
-rights: MIT License
+title: DDIA
+#author: Martin Kleppmann
 lang: en-US
 tags: [pandoc, book, my-book, etc]
 abstract: |

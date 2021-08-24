@@ -8,12 +8,30 @@ BUILD = build
 MAKEFILE = Makefile
 OUTPUT_FILENAME = book
 METADATA = metadata.yml
-CHAPTERS = chapters/*.md
+CHAPTERS += $(addprefix ./chapters/,\
+ part-i.md\
+ ch1.md\
+ ch2.md\
+ ch3.md\
+ ch4.md\
+ part-ii.md\
+ ch5.md\
+ ch6.md\
+ ch7.md\
+ ch8.md\
+ ch9.md\
+ part-iii.md\
+ ch10.md\
+ ch11.md\
+ ch12.md\
+ glossary.md\
+ colophon.md\
+)
 TOC = --toc --toc-depth 2
 METADATA_ARGS = --metadata-file $(METADATA)
-IMAGES = $(shell find images -type f)
+IMAGES = $(shell find img -type f)
 TEMPLATES = $(shell find templates/ -type f)
-COVER_IMAGE = images/cover.png
+COVER_IMAGE = img/cover.png
 MATH_FORMULAS = --webtex
 
 # Chapters content
